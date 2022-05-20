@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:the_code_brothers/data/api_routes.dart';
-import 'package:the_code_brothers/models/models.dart';
+import 'package:the_code_brothers/models/gallery_models.dart';
 import 'package:the_code_brothers/presentation/pages/widgets/gallery_grid_view.dart';
 
 Future<List<GalleryInfo>> downloadJSON() async {

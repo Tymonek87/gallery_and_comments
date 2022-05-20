@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
-import 'package:the_code_brothers/models/models.dart';
+import 'package:the_code_brothers/models/gallery_models.dart';
 
 class GalleryDataService {
   Future<GalleryInfo> getGallery() async {

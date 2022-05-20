@@ -2,10 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' show get;
 import 'package:the_code_brothers/data/api_routes.dart';
+import 'package:the_code_brothers/models/comments_models.dart';
 import 'dart:convert';
-
-import 'package:the_code_brothers/models/models.dart';
-
 import 'package:the_code_brothers/presentation/pages/comments/comments_list_view.dart';
 
 

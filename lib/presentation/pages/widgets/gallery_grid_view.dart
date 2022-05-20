@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:the_code_brothers/models/models.dart';
+import 'package:the_code_brothers/models/gallery_models.dart';
 import 'package:the_code_brothers/presentation/pages/gallery/detali_screen_view.dart';
 import 'package:the_code_brothers/presentation/pages/styles/dimens.dart';
  
