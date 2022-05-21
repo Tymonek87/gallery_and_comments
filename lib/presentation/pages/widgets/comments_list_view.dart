@@ -3,10 +3,10 @@ import 'package:the_code_brothers/models/comments_models.dart';
 
 import 'package:the_code_brothers/presentation/pages/widgets/single_comment_template.dart';
 
-class CustomListView extends StatelessWidget {
+class CommentsListView extends StatelessWidget {
   final List<CommentsInfo> comments;
 
-  const CustomListView(this.comments, {Key? key}) : super(key: key);
+  const CommentsListView(this.comments, {Key? key}) : super(key: key);
 
   @override
   Widget build(context) {

@@ -20,6 +20,11 @@ class CommentsInfo {
     final body = json['body'];
 
     return CommentsInfo(
-        postId: postId, id: id, name: name, email: email, body: body);
+      postId: postId,
+      id: id,
+      name: name,
+      email: email,
+      body: body,
+    );
   }
 }
