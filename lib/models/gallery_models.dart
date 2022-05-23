@@ -12,7 +12,6 @@ class GalleryInfo {
       required this.url,
       required this.thumbnailUrl});
 
-
   factory GalleryInfo.fromJson(Map<String, dynamic> json) {
     final albumId = json['albumId'];
     final id = json['id'];

@@ -11,12 +11,14 @@ class ErrorView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      
-      children: [
-      Text(message, style: AppTypography.h2,),
-      const SizedBox(height: Dimens.m,),
+    return Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Text(
+        message,
+        style: AppTypography.h2,
+      ),
+      const SizedBox(
+        height: Dimens.m,
+      ),
       ElevatedButton(
         child: const Padding(
           padding: EdgeInsets.all(Dimens.m),

@@ -3,7 +3,6 @@ import 'package:the_code_brothers/presentation/pages/comments/comments_view.dart
 import 'package:the_code_brothers/presentation/pages/gallery/gallery_view.dart';
 import 'package:the_code_brothers/presentation/styles/app_typography.dart';
 
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 

@@ -19,10 +19,9 @@ abstract class AppTypography {
     height: 1.5,
   );
 
-    static const body2 = TextStyle(
+  static const body2 = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w400,
     height: 1.5,
   );
-
 }
