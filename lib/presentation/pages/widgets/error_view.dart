@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_code_brothers/presentation/pages/styles/app_typography.dart';
 import 'package:the_code_brothers/presentation/pages/styles/dimens.dart';
 
 class ErrorView extends StatelessWidget {
@@ -9,17 +10,19 @@ class ErrorView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(children: [
-        Text(message),
-        FloatingActionButton(
-          child: const Padding(
-            padding: EdgeInsets.all(Dimens.m),
-            child: Center(child: Text('Try again')),
-          ),
-          onPressed: (() => function()),
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      
+      children: [
+      Text(message, style: AppTypography.h2,),
+      const SizedBox(height: Dimens.m,),
+      ElevatedButton(
+        child: const Padding(
+          padding: EdgeInsets.all(Dimens.m),
+          child: Text('Try again'),
         ),
-      ]),
-    );
+        onPressed: (() => function()),
+      ),
+    ]);
   }
 }

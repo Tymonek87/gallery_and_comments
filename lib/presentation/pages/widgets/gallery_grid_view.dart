@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:the_code_brothers/models/gallery_models.dart';
 import 'package:the_code_brothers/presentation/pages/widgets/detali_screen_view.dart';
 import 'package:the_code_brothers/presentation/pages/styles/dimens.dart';
- 
 
 class GalleryGridView extends StatelessWidget {
   final List<GalleryInfo> gallery;
@@ -28,7 +27,8 @@ class GalleryGridView extends StatelessWidget {
         title: Card(
           elevation: 5.0,
           child: Container(
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(Dimens.m)),
+            decoration:
+                BoxDecoration(borderRadius: BorderRadius.circular(Dimens.m)),
             padding: const EdgeInsets.all(Dimens.s),
             margin: const EdgeInsets.all(Dimens.xs),
             child: Image.network(gallery.thumbnailUrl),
@@ -38,7 +38,6 @@ class GalleryGridView extends StatelessWidget {
           var route = MaterialPageRoute(
             builder: (BuildContext context) => DetailScreen(value: gallery),
           );
-
           Navigator.of(context).push(route);
         });
   }
