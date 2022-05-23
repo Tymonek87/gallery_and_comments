@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:the_code_brothers/presentation/pages/comments/cubit/comments_cubit.dart';
-import 'package:the_code_brothers/presentation/pages/widgets/comments_list_view.dart';
-import 'package:the_code_brothers/presentation/pages/widgets/error_view.dart';
+
+import 'package:the_code_brothers/presentation/widgets/comments_list_view.dart';
+import 'package:the_code_brothers/presentation/widgets/error_view.dart';
 
 class CommentsView extends StatelessWidget {
   final String title;

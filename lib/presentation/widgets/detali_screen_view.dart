@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:the_code_brothers/models/gallery_models.dart';
-import 'package:the_code_brothers/presentation/pages/styles/app_typography.dart';
-import 'package:the_code_brothers/presentation/pages/styles/dimens.dart';
+import 'package:the_code_brothers/presentation/styles/app_typography.dart';
+import 'package:the_code_brothers/presentation/styles/dimens.dart';
 
 class DetailScreen extends StatefulWidget {
   final GalleryInfo? value;
@@ -11,6 +11,7 @@ class DetailScreen extends StatefulWidget {
   @override
   _DetailScreenState createState() => _DetailScreenState();
 }
+
 class _DetailScreenState extends State<DetailScreen> {
   @override
   Widget build(BuildContext context) {

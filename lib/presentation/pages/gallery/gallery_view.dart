@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:the_code_brothers/presentation/pages/gallery/cubit/gallery_cubit.dart';
-import 'package:the_code_brothers/presentation/pages/widgets/error_view.dart';
-
 import 'package:the_code_brothers/presentation/pages/widgets/gallery_grid_view.dart';
+import 'package:the_code_brothers/presentation/widgets/error_view.dart';
 
 class GalleryView extends StatelessWidget {
   final String title;
@@ -26,7 +25,8 @@ class GalleryView extends StatelessWidget {
                   return GalleryGridView(state.list);
                 }
                 if (state is GalleryError) {
-                  return ErrorView(message: state.error,
+                  return ErrorView(
+                    message: state.error,
                     function: context.read<GalleryCubit>().getGallery,
                   );
                 } else {

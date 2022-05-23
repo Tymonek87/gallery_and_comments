@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:the_code_brothers/models/gallery_models.dart';
-import 'package:the_code_brothers/presentation/pages/widgets/detali_screen_view.dart';
-import 'package:the_code_brothers/presentation/pages/styles/dimens.dart';
+import 'package:the_code_brothers/presentation/styles/dimens.dart';
+import 'package:the_code_brothers/presentation/widgets/detali_screen_view.dart';
+
 
 class GalleryGridView extends StatelessWidget {
   final List<GalleryInfo> gallery;

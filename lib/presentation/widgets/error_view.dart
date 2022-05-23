@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:the_code_brothers/presentation/pages/styles/app_typography.dart';
-import 'package:the_code_brothers/presentation/pages/styles/dimens.dart';
+
+import 'package:the_code_brothers/presentation/styles/app_typography.dart';
+import 'package:the_code_brothers/presentation/styles/dimens.dart';
 
 class ErrorView extends StatelessWidget {
   const ErrorView({Key? key, required this.function, required this.message})

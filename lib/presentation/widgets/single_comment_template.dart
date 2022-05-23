@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:the_code_brothers/models/comments_models.dart';
-import 'package:the_code_brothers/presentation/pages/styles/app_typography.dart';
-import 'package:the_code_brothers/presentation/pages/styles/dimens.dart';
+import 'package:the_code_brothers/presentation/styles/app_typography.dart';
+import 'package:the_code_brothers/presentation/styles/dimens.dart';
+
 
 Widget createCommentViewItem(CommentsInfo comments, BuildContext context) {
   return ListTile(
