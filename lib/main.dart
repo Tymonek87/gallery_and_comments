@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:the_code_brothers/presentation/pages/comments/comments_cubit.dart';
-import 'package:the_code_brothers/presentation/pages/gallery/gallery_cubit.dart';
+import 'package:the_code_brothers/presentation/pages/comments/cubit/comments_cubit.dart';
+import 'package:the_code_brothers/presentation/pages/gallery/cubit/gallery_cubit.dart';
 import 'package:the_code_brothers/presentation/pages/main/home_page.dart';
 
 void main() {

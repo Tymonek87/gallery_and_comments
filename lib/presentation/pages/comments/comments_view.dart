@@ -1,11 +1,8 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:http/http.dart' show get;
-import 'package:the_code_brothers/data/api_routes.dart';
-import 'package:the_code_brothers/models/comments_models.dart';
-import 'package:the_code_brothers/presentation/pages/comments/comments_cubit.dart';
+import 'package:the_code_brothers/presentation/pages/comments/cubit/comments_cubit.dart';
 import 'package:the_code_brothers/presentation/pages/widgets/comments_list_view.dart';
+import 'package:the_code_brothers/presentation/pages/widgets/error_view.dart';
 
 class CommentsView extends StatelessWidget {
   final String title;
@@ -21,14 +18,21 @@ class CommentsView extends StatelessWidget {
             title: Text(title),
             centerTitle: true,
           ),
-          body: Center(child: BlocBuilder<CommentsCubit, List<CommentsInfo>>(
-            builder: ((context, comments) {
-              if (comments.isEmpty) {
+          body: Center(child: BlocBuilder<CommentsCubit, CommentsState>(
+            builder: ((context, state) {
+              if (state is CommentsLoaded) {
+                return CommentsListView(state.list);
+              }
+              if (state is CommentsError) {
+                return ErrorView(
+                  message: state.error,
+                  function: context.read<CommentsCubit>().getComments,
+                );
+              } else {
                 return const Center(
                   child: CircularProgressIndicator(),
                 );
               }
-              return CommentsListView(comments);
             }),
           )),
         ),
